@@ -1,7 +1,12 @@
+/* COULEUR */
+:root { 
+	--couleurPrincipale: hsl(123, 10%, 44%);
+
+}
 body {
 	font-family: system-ui;
-	background: #f1357a;
-	color: aliceblue;
+	/* background: var(--couleurPrincipale);
+	color: color-mix(in srgb, var(--couleurPrincipale) 10%, white 100%); */
 
 }
 
