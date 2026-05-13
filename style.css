@@ -1,7 +1,7 @@
 /* COULEUR */
 :root { 
 	--couleurPrincipale: hsl(123, 10%, 44%);
-
+	--couleursecondaire: hsl(301, 100%, 50%);
 }
 body {
 	font-family: system-ui;

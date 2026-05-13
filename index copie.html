@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		* { margin: 0; }
+		body{ font-family: system-ui; }
+
+		:root {
+			--fiesta: #F1357F;
+			--cyan: #357AF1;
+		}
+
+		.color{
+			margin: 2rem;
+			padding: 0.5rem;
+			width: max-content;
+		}
+		.swatch{
+			width: 2.5cm;
+			aspect-ratio: 1;
+		}
+
+		.label {
+			font-family: monospace;
+			padding-top: 0.5em;
+			margin-top: 0.5em;
+			border-top: 1px solid #CCC; 
+		}
+
+	</style>
+	<script src="swatches.js" defer></script>
+</head>
+<body>
+
+<script src="swatches.js"></script>
+	
+<div class="color">
+	<h3>couleur principale</h3>
+	<div class="swatch" style="background: var(--couleurPrincipale);"></div>
+	<p class="label" data-color-format="hex"></p>
+	<p class="label" data-color-format="rgb"></p>
+	<p class="label" data-color-format="hsl"></p>
+	<p class="label" data-color-format="lab"></p>
+	<p class="label" data-color-format="oklch"></p>
+	<p class="label" data-color-format="cmyk"></p>
+</div>
+
+<div class="color">
+	<h3>couleur secondaire</h3>
+		<div class="swatch" style="background: var(--couleursecondaire);"></div>
+	<p><small></small></p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="hex">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="rgb">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="hsl">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="lab">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="oklch">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="cmyk">–</p>
+</div>
+
+<div class="color">
+	<h3>mix</h3>
+	<div class="swatch" style="background: color-mix(in srgb,var(--couleurPrincipale), var(--couleursecondaire));"></div>	
+	<p class="label" data-color-source="swatch" 	data-color-property="background-color" data-color-format="cmyk">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="rgb">–</p>
+</div>
+
+<div class="color">
+	<h3>Couleur obscur</h3>
+
+	<div class="swatch" style="background-color: hsl(from var(--couleurPrincipale) h s 20%);"></div>
+	<p class="label" data-color-source="swatch" 	data-color-property="background-color" data-color-format="cmyk">–</p>
+	<p class="label" data-color-source="swatch" data-color-property="background-color" data-color-format="rgb">–</p>
+</div>
+</body>
+</html>
