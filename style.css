@@ -1,15 +1,42 @@
 /* COULEUR */
 :root { 
-	--couleurPrincipale: hsl(123, 10%, 44%);
-	--couleursecondaire: hsl(301, 100%, 50%);
+	--couleur1: hsl(172,100%,30%);
+	--couleur2: hsl(30, 100%, 47%);
+	--couleur3: hsl(327, 100%, 45%);
+  --couleur4: hsl(247, 54%, 33%);
 }
 body {
 	font-family: system-ui;
-	/* background: var(--couleurPrincipale);
-	color: color-mix(in srgb, var(--couleurPrincipale) 10%, white 100%); */
-
+}
+/* FONT SCALE */
+:root {
+  /* Typography Scale */
+  --font-size-base: 16px;
+  --font-size-XS: 0.64rem; /* 10.24px */
+  --font-size-S: 0.80rem; /* 12.8px */
+  --font-size-M: 1.00rem; /* 16px */
+  --font-size-L: 1.25rem; /* 20px */
+  --font-size-XL: 1.56rem; /* 25px */
+  --font-size-XXl: 1.95rem; /* 31.25px */
+  --font-size-XXXL: 2.44rem; /* 39.06px */
+  --font-size-XXXXL: 3.05rem; /* 48.83px */
 }
 
 h1 {
 	font-size: 8vw;
 }
+
+article {
+  font-size: x-large;
+  margin-left: 2.5rem;
+  font-family: monospace;
+}
+
+section {
+  font-size:x-large;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
